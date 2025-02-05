@@ -1,0 +1,31 @@
+
+namespace Well1
+{
+	class Program
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Você tem carteira de motorista?(sim/não)");
+			 string opcao1 = Console.ReadLine().ToLower();
+			
+			Console.WriteLine("Você tem 18 anos ou mais? (sim/não)");
+			 string opcao2 = Console.ReadLine().ToLower();
+			
+			 if (opcao1 == "sim" && opcao2 == "sim")
+			
+			{
+			
+			 	Console.WriteLine("Voce pode dirigir.");
+			 	Console.ReadLine();
+			}
+			 else
+			{
+			 	
+			 	Console.WriteLine("Voce não pode dirigir.");
+				Console.ReadLine();
+			 }
+			 Console.WriteLine("Aperte qualquer botão para sair...");
+			 Console.ReadKey(true);
+		}
+	}
+}
